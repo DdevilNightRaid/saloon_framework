@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,300;1,300&family=Lobster&display=swap');@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,300;1,300&family=Lobster&display=swap');
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 2rem;
+}
+
+.section0{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 2rem;
+    letter-spacing: -2px;
+    font-family: 'Lobster', cursive;
+    word-spacing: 1px;
+}
+
+
+.navContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0.5rem 7rem;
+    justify-content: space-between;
+    z-index: 222;
+}
+.navContainer .navImg{
+    height: 5rem;
+    width: 5rem;
+}
+.navContainer h2{
+    display: none;
+}
+.navContainer .nav{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-family: 'Chivo Mono', monospace;
+}
+
+.navCTA{
+    border: 2px solid black;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.navCTA:hover{
+    color: #fff;
+    background-color: black;
+}
+.navBtns{
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #0f0f0f;
+    font-size: 2.3rem;
+    display: none;
+}
+@media screen and (max-width: 800px) {
+    .navContainer .navImg{
+        height: 4rem;
+        width: 4rem;
+    }
+    .navContainer h2{
+        display: block;
+        color: #03191E;
+    }
+    .navContainer .navBtns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navContainer{
+        justify-content: space-between;
+        padding: 2px 0rem;
+        z-index: 100;
+    }
+    .navContainer .nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        background-color: #ebebeb;
+        transition: 1s;
+        transform: translateX(-150vh);
+    }
+    .navLink{
+        font-size: 2rem;
+    }
+    .navContainer .responsiveNav{
+        transform: none;
+    }
+}
+@media (min-width: 741px) and (max-width: 1112px) {
+    .navContainer .navImg{
+        height: 3rem;
+        width: 4rem;
+    }
+}

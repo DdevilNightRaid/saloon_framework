@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&family=Nunito+Sans:wght@300&family=Playfair+Display&family=Poppins:wght@300&display=swap');
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 2px solid #0F0F0D;
+    padding: 1rem 7rem;
+}
+
+.section0 {
+    display: flex;
+    /* gap: 15rem; */
+    justify-content: space-between;
+    border-bottom: 1px solid #0F0F0D;
+    padding: 1rem 0;
+}
+
+.s0Part0 {
+    width: 23%;
+}
+
+.s0P0BrandName {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Chivo Mono', monospace;
+}
+
+.s0P0BrandDesc {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+
+.s0Part1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.s0Part1H {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Chivo Mono', monospace;
+}
+
+.s0P1D {
+    display: flex;
+    gap: 0.3rem;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.s0P2H3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.s0P2Strong {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+}
+
+.section1 {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+}
+
+.s1Part0 {
+    display: flex;
+    gap: 2rem;
+}
+
+.goTop {
+    background: #F97A12;
+    padding: 0.5rem;
+    color: #F8F3F0;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 800px) {
+    .footer {
+        padding: 1rem 0.5rem;
+    }
+
+    .section0 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .s0Part0 {
+        width: 100%;
+    }
+
+    .s0Part1 {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .s0Part1H {
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-family: 'Chivo Mono', monospace;
+    }
+
+    .s0P1D {
+        display: flex;
+        gap: 0.3rem;
+        justify-content: left;
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .s0P2H3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+
+    .s0P2Strong {
+        font-family: 'Playfair Display', serif;
+        font-size: 1rem;
+    }
+
+    .section1 {
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Poppins', sans-serif;
+        flex-direction: column;
+    }
+
+    .s1Part0 {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .goTop {
+        background: #F97A12;
+        padding: 1rem;
+        border-radius: 0px;
+        text-align: center;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
